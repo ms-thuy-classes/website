@@ -1,0 +1,496 @@
+# PROMPT
+
+Bạn là Senior Full Stack Developer và UI/UX Designer với hơn 15 năm kinh nghiệm.
+
+Hãy xây dựng một website hoàn chỉnh bằng **HTML5 + CSS3 + Vanilla JavaScript** (không dùng framework) với mã nguồn sạch, dễ bảo trì, chuẩn SEO và có cấu trúc giống một CMS mini.
+
+## Thông tin website
+
+Tên website:
+
+**Learn with Ms. Thúy**
+
+Chủ đề:
+
+> Website chia sẻ kiến thức học Tiếng Anh và bán khóa học.
+
+Phong cách thiết kế:
+
+* Hiện đại
+* Tối giản
+* Chuẩn Education
+* Gradient Pastel
+* Bo góc mềm
+* Hiệu ứng glassmorphism nhẹ
+* Responsive hoàn toàn
+* Animation mượt
+* Font Google: Poppins hoặc Be Vietnam Pro
+* Icon dùng Font Awesome
+
+Màu chủ đạo:
+
+* Pastel Pink
+* Pastel Purple
+* Pastel Blue
+* Pastel Mint
+
+Gradient ví dụ:
+
+```
+#FFE5EC
+#FDE2FF
+#D9F0FF
+#D8FFF5
+```
+
+Website tạo cảm giác:
+
+* chuyên nghiệp
+* đáng tin cậy
+* thân thiện
+* truyền cảm hứng học tập
+
+---
+
+# Cấu trúc thư mục
+
+```
+/
+│
+├── index.html
+├── course.html
+├── article.html
+├── roadmap.html
+│
+├── css/
+│      style.css
+│      article.css
+│
+├── js/
+│      app.js
+│      articles.js
+│      router.js
+│
+├── assets/
+│      images/
+│      icons/
+│      banner/
+│
+├── data/
+│      articles.json
+│      categories.json
+│
+│      post-001.html
+│      post-002.html
+│      post-003.html
+│
+└── README.md
+```
+
+Toàn bộ dữ liệu bài viết phải nằm trong thư mục **data**.
+
+---
+
+# Header
+
+Logo:
+
+```
+Learn with Ms. Thúy
+```
+
+Menu ngang:
+
+* Tiếng Anh Phổ thông
+* IELTS
+* TOEIC
+* Giao tiếp
+* Lộ trình
+
+Bên phải:
+
+* ô Search
+* icon Facebook
+* icon YouTube
+
+Header sticky khi cuộn.
+
+---
+
+# Landing Page
+
+Hero Section đẹp.
+
+Nội dung gồm:
+
+Tiêu đề lớn:
+
+> Learn English Smarter, Not Harder
+
+Subtitle:
+
+> Đồng hành cùng bạn trên hành trình chinh phục tiếng Anh.
+
+Nút:
+
+* Khám phá khóa học
+* Xem bài viết
+
+Có minh họa Education.
+
+Background gradient pastel.
+
+---
+
+# Section Khóa học
+
+Hiển thị dạng Card.
+
+Ví dụ:
+
+Card gồm:
+
+* Hình ảnh
+* Tên khóa học
+* Mô tả ngắn
+* Nút Xem chi tiết
+
+Ví dụ:
+
+* Tiếng Anh Phổ thông
+* IELTS Foundation
+* TOEIC 900+
+* Giao tiếp phản xạ
+
+---
+
+# Section Giới thiệu
+
+Ảnh giáo viên
+
+Tên:
+
+Ms. Thúy
+
+Giới thiệu:
+
+* nhiều năm giảng dạy
+* luyện IELTS
+* TOEIC
+* Giao tiếp
+* hỗ trợ học viên
+
+Có thống kê:
+
+500+
+
+Học viên
+
+1000+
+
+Bài học
+
+95%
+
+Đạt mục tiêu
+
+---
+
+# Footer
+
+Bao gồm:
+
+* Logo
+* Giới thiệu
+* Menu nhanh
+* Facebook
+* Youtube
+* Email
+* Copyright
+
+---
+
+# Hệ thống bài viết
+
+Website hoạt động giống Blog.
+
+Khi người dùng bấm menu:
+
+Ví dụ:
+
+```
+Tiếng Anh Phổ thông
+```
+
+Website sẽ chuyển tới
+
+```
+/article.html?category=general
+```
+
+và hiển thị toàn bộ bài viết thuộc category đó.
+
+---
+
+# Filter trong từng menu
+
+## 1. Tiếng Anh Phổ thông
+
+Filter:
+
+* Test
+* Từ vựng
+* Ngữ pháp
+
+---
+
+## 2. IELTS
+
+Filter:
+
+* Ngữ pháp
+* Từ vựng
+* Reading
+* Listening
+* Writing
+* Speaking
+
+---
+
+## 3. TOEIC
+
+Filter:
+
+* Ngữ pháp
+* Từ vựng
+* Reading
+* Listening
+* Writing
+* Speaking
+
+---
+
+## 4. Giao tiếp
+
+Filter:
+
+* Daily Conversation
+* Pronunciation
+* Vocabulary
+* Speaking Practice
+
+---
+
+## 5. Lộ trình
+
+Filter:
+
+* Lộ trình Tiếng Anh Phổ thông
+* Lộ trình IELTS
+* Lộ trình TOEIC
+* Lộ trình Giao tiếp
+
+---
+
+Filter hoạt động bằng JavaScript.
+
+Không reload trang.
+
+---
+
+# Dữ liệu bài viết
+
+Tất cả metadata lưu trong
+
+```
+data/articles.json
+```
+
+Ví dụ:
+
+```json
+[
+  {
+    "id": "001",
+    "title": "100 Từ vựng IELTS Topic Education",
+    "category": "IELTS",
+    "filter": "Vocabulary",
+    "thumbnail": "assets/images/ielts1.jpg",
+    "description": "Tổng hợp từ vựng IELTS chủ đề Education.",
+    "type": "local",
+    "link": "data/post-001.html",
+    "date": "2026-07-09"
+  },
+  {
+    "id": "002",
+    "title": "50 Cấu trúc ngữ pháp TOEIC",
+    "category": "TOEIC",
+    "filter": "Grammar",
+    "thumbnail": "assets/images/toeic.jpg",
+    "description": "Ngữ pháp TOEIC thường gặp.",
+    "type": "external",
+    "link": "https://example.com/toeic-grammar",
+    "date": "2026-07-10"
+  }
+]
+```
+
+---
+
+# Quy tắc mở bài viết
+
+Nếu
+
+```
+type = local
+```
+
+thì khi click sẽ mở
+
+```
+data/post-001.html
+```
+
+Nếu
+
+```
+type = external
+```
+
+thì mở đúng URL ngoài trong tab mới.
+
+Ví dụ:
+
+```
+https://abc.com/...
+```
+
+---
+
+# Trang danh sách bài viết
+
+Hiển thị dạng Grid.
+
+Mỗi Card gồm:
+
+* Thumbnail
+* Category Badge
+* Filter Badge
+* Tiêu đề
+* Mô tả
+* Ngày đăng
+* Nút Đọc tiếp
+
+Có Hover Effect.
+
+---
+
+# Search
+
+Search tìm theo:
+
+* tiêu đề
+* category
+* filter
+
+Search realtime.
+
+---
+
+# Router
+
+Không dùng backend.
+
+Chỉ dùng URL Query.
+
+Ví dụ:
+
+```
+article.html?category=IELTS
+```
+
+hoặc
+
+```
+article.html?category=TOEIC
+```
+
+hoặc
+
+```
+article.html?category=General
+```
+
+JavaScript tự đọc URL và render.
+
+---
+
+# SEO
+
+Có:
+
+* title
+* description
+* Open Graph
+* favicon
+* semantic HTML
+
+---
+
+# Responsive
+
+Desktop
+
+Tablet
+
+Mobile
+
+Menu Mobile dạng Hamburger.
+
+---
+
+# Animation
+
+Dùng:
+
+* Fade Up
+* Hover Card
+* Smooth Scroll
+* Gradient Animation
+* Button Ripple
+* Floating Illustration
+
+---
+
+# Code Requirement
+
+Yêu cầu code:
+
+* HTML chuẩn W3C
+* CSS tách file
+* JavaScript ES6 Module
+* Comment đầy đủ
+* Dễ mở rộng
+* Không hardcode dữ liệu
+* Toàn bộ bài viết render từ `articles.json`
+* Chỉ cần thêm một object mới vào `articles.json` là website tự hiển thị bài viết.
+
+---
+
+# Tính năng mở rộng
+
+Thiết kế sẵn kiến trúc để sau này dễ nâng cấp:
+
+* Pagination
+* Dark Mode
+* Bookmark bài viết
+* Related Posts
+* Popular Posts
+* Latest Posts
+* Breadcrumb
+* Lazy Loading ảnh
+* Sitemap
+* RSS Feed
+* Admin CMS trong tương lai mà không cần sửa cấu trúc dữ liệu.
+
+Mục tiêu cuối cùng là tạo một website giáo dục hiện đại, đẹp mắt, tốc độ tải nhanh, chuẩn SEO, dễ bảo trì và hoạt động như một CMS mini chỉ với HTML, CSS và JavaScript, trong đó toàn bộ metadata bài viết được quản lý trong `data/articles.json`, còn nội dung bài viết nội bộ được lưu thành các file HTML riêng trong thư mục `data/` (ví dụ: `post-001.html`). Hệ thống phải tự động phân loại bài viết theo menu và filter, đồng thời hỗ trợ cả bài viết nội bộ lẫn liên kết đến các website bên ngoài.
