@@ -1,0 +1,56 @@
+{
+    "articles": [
+        {
+            "id": "post-001",
+            "title": "Tổng hợp 50 thì cơ bản trong Tiếng Anh",
+            "excerpt": "Hướng dẫn chi tiết các thì cơ bản nhất trong tiếng Anh kèm ví dụ minh họa dễ hiểu.",
+            "category": "tieng-anh-pho-thong",
+            "filters": ["ngữ-pháp"],
+            "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop",
+            "author": "Ms. Thúy",
+            "date": "2026-07-01",
+            "readTime": "15 phút",
+            "type": "internal",
+            "url": "data/post-001.html"
+        },
+        {
+            "id": "post-002",
+            "title": "1000 từ vựng tiếng Anh thông dụng nhất",
+            "excerpt": "Bộ từ vựng được chọn lọc kỹ càng theo tần suất sử dụng.",
+            "category": "tieng-anh-pho-thong",
+            "filters": ["tu-vung"],
+            "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
+            "author": "Ms. Thúy",
+            "date": "2026-06-28",
+            "readTime": "20 phút",
+            "type": "internal",
+            "url": "data/post-002.html"
+        },
+        {
+            "id": "post-003",
+            "title": "Bài test trình độ A1-A2",
+            "excerpt": "Bài kiểm tra tổng hợp giúp bạn đánh giá chính xác trình độ.",
+            "category": "tieng-anh-pho-thong",
+            "filters": ["test"],
+            "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop",
+            "author": "Ms. Thúy",
+            "date": "2026-06-25",
+            "readTime": "30 phút",
+            "type": "internal",
+            "url": "data/post-003.html"
+        },
+        {
+            "id": "post-004",
+            "title": "Phân biệt cách dùng Make và Do",
+            "excerpt": "Hướng dẫn chi tiết sự khác biệt giữa Make và Do.",
+            "category": "tieng-anh-pho-thong",
+            "filters": ["ngữ-pháp"],
+            "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop",
+            "author": "Ms. Thúy",
+            "date": "2026-06-20",
+            "readTime": "10 phút",
+            "type": "external",
+            "url": "https://www.grammarly.com/blog/make-vs-do/"
+        }
+    ]
+}
